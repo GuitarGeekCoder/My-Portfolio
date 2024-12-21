@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Maheshwari | Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+/* #hero_footer {
+    background-color: #4CAF50;
+    color: white;
+} */
+/* Hero Section */
+#hero {
+    background-color: darkcyan;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+#hero .cta-btn {
+    display: inline-block;
+    background-color: #ddd;
+    color: darkcyan;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+#hero .cta-btn:hover {
+    background-color: #ddd;
+}
+
+.project {
+    background-color: initial;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* transition: transform 0.3s ease; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.project p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.project:hover {
+  /* transform: rotate(15deg); Rotate the box by 15 degrees */
+  /* transform: scale(1.3); Rotate the box by 15 degrees */
+  transform: scale(1.1); /* Scale by 10% instead of 1.3 to prevent overflow */
+    transform-origin: center center; /* Make scaling happen from the center */
+    z-index: 10;
+}
+.project:hover h3,
+.project:hover p {
+    z-index: 10; /* Ensure text stays above other elements */
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.skill h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.skill ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact ul {
+    font-size: 16px;
+    line-height: 1.8;
+}
+#contact a {
+    color: #4CAF50;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+<style>
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+/* Project Section */
+#projects {
+    background-color: color-mix;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.skill h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.skill ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#contact ul {
+    font-size: 16px;
+    line-height: 1.8;
+}
+#contact a {
+    color: #4CAF50;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.margin_left_5{
+    margin-left: 5%;
+}
+.margin_right_1{
+    margin-right: 1%;
+}
+.width_20{
+    width: 20%;
+}
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #ddd;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 15px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+/* Section Styling */
+.section {
+    padding: 50px 0;
+    background-color: currentColor;
+}
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+.section-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section Styling */
+#about {
+    background-color: currentColor;
+    padding: 60px 0;
+    color: #ddd;
+}
+#about .section-content {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+#about h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: floralwhite;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #bbb;
+}
+#about ul {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+#about ul li {
+    margin-bottom: 10px;
+}
+#about h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: floralwhite;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.skill h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.skill ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+/* Contact Section */
+#contact ul {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ddd;
+}
+#contact a {
+    color: #4CAF50;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#hero_footer {
+    background-color: darkcyan;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#hero_footer .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#hero_footer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#hero_footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#hero_footer ul li {
+    font-size: 16px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero_footer a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#hero_footer a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+#hero_footer a:hover {
+    text-decoration: underline;
+}
+
+.margin_left_5{
+    margin-left: 5%;
+}
+.margin_right_1{
+    margin-right: 1%;
+}
+.width_20{
+    width: 20%;
+}
+
+@media (min-width: 768px) {
+    #hero_footer ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    #hero_footer ul li {
+        margin: 0;
+    }
+}
+</style>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav>
+            <div class="width_20">
+                <div class="logo margin_left_5">
+                    <a href="#">Pratik Maheshwari</a>
+                </div>
+            </div>
+            <div class="margin_right_1">    
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#hero_footer">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Pratik Maheshwari</h1>
+            <p>Experienced Software Developer specializing in Python, Django, React, and Golang</p>
+            <a href="#hero_footer" class="cta-btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-content">
+            <h2>Who Am I? ok! Let Me Introduce Myself</h2>
+            <p>Hello! I'm Pratik Maheshwari, a passionate and results-driven Software Developer with over 2 years of experience in building scalable, high-performance web applications. I specialize in both backend and frontend technologies, including <strong>Python</strong>, <strong>Django</strong>, <strong>Golang</strong>, and <strong>React</strong>. With a strong problem-solving mindset, I thrive in dynamic environments where I can work on real-world business challenges and continuously enhance my technical skills.</p>
+    
+            <h3>My Skill Set</h3>
+            <p>I possess a versatile skill set that spans <strong>Golang</strong>, <strong>Python</strong>, <strong>SQL</strong>, and <strong>JavaScript</strong>:</p>
+            <ul>
+                <li><strong>Golang & Python:</strong> I have successfully developed robust, scalable applications and solved complex problems, especially in backend development. My expertise in these languages allows me to build high-performance systems that meet business needs.</li>
+                <li><strong>SQL:</strong> Proficient in database management and optimization, I ensure data integrity and efficiency in large-scale applications.</li>
+                <li><strong>JavaScript & React:</strong> With JavaScript and React, I create dynamic, interactive web applications that enhance user experience and meet modern web standards.</li>
+            </ul>
+    
+            <h3>What I Do</h3>
+            <p>I’m passionate about creating solutions that have a real-world impact. Whether it's optimizing performance, improving user experience, or developing entirely new systems, I approach each project with a problem-solving mindset and strive for continuous improvement.</p>
+            <ul>
+                <li><strong>Team Leadership:</strong> Led a dynamic team of developers in the successful execution of multiple Python and Golang based projects, including both desktop and web applications.</li>
+                <li><strong>Collaboration:</strong> Worked as a key contributor to various <strong>Golang</strong> projects, collaborating closely with colleagues to deliver high-quality, scalable solutions.</li>
+                <li><strong>Independent Projects:</strong> I have successfully managed solo projects, such as a <strong>web scraping tool</strong>, which showcased my strong skills in automation, problem-solving, and Python development.</li>
+            </ul>
+    
+            <h3>Education</h3>
+            <ul>
+                <li><strong>High School (PCM)</strong> – St. Jones Convent H.S. School, Khandwa, Madhya Pradesh (2015)  
+                    <strong>Marks:</strong> 78% (Division I)</li>
+                <li><strong>Bachelor of Engineering / Bachelor of Technology (B.E./B.Tech) in Mechanical Engineering</strong> – IPS Academy, Indore, RGPV University (2019)  
+                    <strong>Marks:</strong> 75% (Division I)</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-content">
+            <h2>My Art</h2>
+
+            <div class="project">
+                <h3>AI-Driven Client Communication System</h3>
+                <p><strong>Role:</strong> Solo Developer</p>
+                <p><strong>Description:</strong> 
+                Developed an intermediary layer between clients and a chatbot,enabling efficient message handling. Clients submit queries via messaging, which are validated, logged, and forwarded to an Al/ML system for response generation. The received replies are routed to an approval section where employees assess accuracy before responding to clients. This streamlined process enhances communication and ensures quality control in client interactions
+                </p>
+                <p><strong>Technologies:</strong> Django, React, Docker, RabbitMQ, Redis</p>
+            </div>
+
+            <div class="project">
+                <h3>Article Search Desktop Application</h3>
+                <p><strong>Role:</strong> Team Lead</p>
+                <p><strong>Description:</strong> 
+                    Developed a custom web scraping tool capable of extracting product data from Amazon based on provided category URLs. This tool efficiently collected data for all products within specified categories. Additionally, I implemented a graphical system that allowed the client to monitor daily sales of the items, providing valuable insights for business decision-making. This project not only demonstrated my web scraping skills but also showcased my ability to create data-driven solutions to meet client needs.
+                </p>
+                <p><strong>Technologies:</strong> Python, Django, SQL, JavaScript</p>
+            </div>
+
+            <div class="project">
+                <h3>Booking.com Scraper</h3>
+                <p><strong>Role:</strong> Solo Developer</p>
+                <p><strong>Description:</strong> Developed a web scraping tool to extract competitor data and prices from Booking.com, helping suggest optimal room prices for an internal hotel management system.</p>
+                <p><strong>Technologies:</strong> Python, RabbitMQ</p>
+            </div>
+
+            <div class="project">
+                <h3>Amazon Scraper</h3>
+                <p><strong>Role:</strong> Solo Developer</p>
+                <p><strong>Description:</strong> 
+                    Developed a custom web scraping tool capable of extracting product data from Amazon based on provided category URLs. This tool efficiently collected data for all products within specified categories. Additionally, I implemented a graphical system that allowed the client to monitor daily sales of the items, providing valuable insights for business decision-making. This project not only demonstrated my web scraping skills but also showcased my ability to create data-driven solutions to meet client needs.</p>
+                <p><strong>Technologies:</strong> Python, Golang, SQL, JavaScript</p>
+            </div>
+
+            <div class="project">
+                <h3>Lead and Order Management Portal</h3>
+                <p><strong>Role:</strong> Team Lead</p>
+                <p><strong>Description:</strong> 
+                    As a team lead, I spearheaded the development of a comprehensive Stock and Lead Management Admin Portal. This platform empowers administrators to efficiently manage their teams and streamline operations. One of the core functionalities includes the ability for administrators to onboard employees within their organization seamlessly. Additionally, the portal offers robust features for tracking and managing leads generated through our mobile application, ensuring a centralized repository for all client interactions and requirements. Through strategic leadership and innovative solutions, our team delivered a scalable and user-friendly platform tailored to the unique needs of our clients.
+                </p>
+                <p><strong>Technologies:</strong> Golang, React, RabbitMQ, Docker</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+     
+    <section id="skills" class="section">
+        <div class="section-content">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-react fa-beat-fade" style="color: #74C0FC;"></i> React</li>
+                        <li><i class="fa-brands fa-js fa-beat-fade" style="color: #FFD43B;"></i> JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-golang fa-beat-fade" style="color: #74C0FC;"></i> Golang</li>
+                        <li><i class="fa-brands fa-python fa-beat-fade" style="color: #FFD43B;"></i> Python</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Tools & Databases</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-docker fa-beat-fade" style="color: #74C0FC;"></i> Docker</li>
+                        <li><i class="fa-solid fa-database fa-beat-fade" style="color: #1731c5;"></i> MYSQL</li>
+                        <li>Redis</li>
+                        <li>RabbitMQ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hero_footer">
+        <div class="hero-content">
+            <p>If you'd like to collaborate or discuss opportunities, feel free to reach out to me through any of the channels below.</p>
+            <ul>
+                <li>
+                    <a href="mailto:pratikmaheshwari321@gmail.com">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+919617655784">
+                        <i class="fas fa-phone-alt"></i> Phone
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/pratik-maheshwari-a2714b169" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/GuitarGeekCoder" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pratik Maheshwari. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
