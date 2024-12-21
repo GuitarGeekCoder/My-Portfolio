@@ -509,3 +509,51 @@ header {
         margin: 0;
     }
 }
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1 1 30%; /* Adjust to make each skill block flexible */
+    min-width: 220px;
+    box-sizing: border-box;
+}
+
+.skills-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-container ul li {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.skills-container ul li i {
+    margin-right: 10px;
+}
+
+/* Media Query for mobile view */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 100%; /* Make each skill take the full width on mobile */
+        text-align: center;
+    }
+
+    .skills-container ul li {
+        font-size: 14px; /* Optional: Make text smaller on mobile */
+    }
+
+    .skills-container ul li i {
+        font-size: 20px; /* Optional: Adjust icon size */
+    }
+}
