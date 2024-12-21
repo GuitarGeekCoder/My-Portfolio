@@ -22,12 +22,7 @@ ul {
     margin: 0 auto;
 }
 
-/* Header and Navigation */
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -165,12 +160,7 @@ ul {
     margin: 0 auto;
 }
 
-/* Header and Navigation */
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -271,12 +261,7 @@ ul {
     margin: 0 auto;
 }
 
-/* Header and Navigation */
-header {
-    background-color: #1f1f1f;
-    color: white;
-    padding: 15px 0;
-}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -460,6 +445,57 @@ footer {
 .width_20{
     width: 20%;
 }
+/* General Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Styles using Media Queries */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+    }
+    
+    header nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    header .logo h1 {
+      font-size: 1.3rem;
+    }
+  }
+  
+
 
 @media (min-width: 768px) {
     #hero_footer ul {
