@@ -136,7 +136,7 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
-<style>
+
 /* Global Styles */
 * {
     margin: 0;
@@ -226,7 +226,9 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
-
+.margin_right_3{
+    margin-right: 3%;
+}
 .margin_left_5{
     margin-left: 5%;
 }
@@ -557,3 +559,22 @@ header {
         font-size: 20px; /* Optional: Adjust icon size */
     }
 }
+@keyframes beatFade {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+  }
+  
+  .beat-fade {
+    display: inline-block;  /* Ensure the img behaves like an inline-block */
+    animation: beatFade 1s infinite;  /* Apply the beat fade animation */
+  }
