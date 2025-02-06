@@ -1,223 +1,678 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pratik Maheshwari | Software Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pratik Maheshwari</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
 
-    <header>
-        <div class="logo ">
-          <h1>Pratik Maheshwari</h1>
-        </div>
-        <div>
-            
-            <nav>
-              <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
-        </div>
-      </header>
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Pratik Maheshwari</h1>
-            <p>Experienced Software Developer specializing in Python, Django, React, and Golang</p>
-            <a href="#hero_footer" class="cta-btn">Get in Touch</a>
-        </div>
-    </section>
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="section-content">
-            <h2>Who Am I? ok! Let Me Introduce Myself</h2>
-            <p>Hello! I'm Pratik Maheshwari, a passionate and results-driven Software Developer with over 2 years of experience in building scalable, high-performance web applications. I specialize in both backend and frontend technologies, including <strong>Python</strong>, <strong>Django</strong>, <strong>Golang</strong>, and <strong>React</strong>. With a strong problem-solving mindset, I thrive in dynamic environments where I can work on real-world business challenges and continuously enhance my technical skills.</p>
-    
-            <h3>My Skill Set</h3>
-            <p>I possess a versatile skill set that spans <strong>Golang</strong>, <strong>Python</strong>, <strong>SQL</strong>, and <strong>JavaScript</strong>:</p>
-            <ul>
-                <li><strong>Golang & Python:</strong> I have successfully developed robust, scalable applications and solved complex problems, especially in backend development. My expertise in these languages allows me to build high-performance systems that meet business needs.</li>
-                <li><strong>SQL:</strong> Proficient in database management and optimization, I ensure data integrity and efficiency in large-scale applications.</li>
-                <li><strong>JavaScript & React:</strong> With JavaScript and React, I create dynamic, interactive web applications that enhance user experience and meet modern web standards.</li>
-            </ul>
-    
-            <h3>What I Do</h3>
-            <p>I’m passionate about creating solutions that have a real-world impact. Whether it's optimizing performance, improving user experience, or developing entirely new systems, I approach each project with a problem-solving mindset and strive for continuous improvement.</p>
-            <ul>
-                <li><strong>Team Leadership:</strong> Led a dynamic team of developers in the successful execution of multiple Python and Golang based projects, including both desktop and web applications.</li>
-                <li><strong>Collaboration:</strong> Worked as a key contributor to various <strong>Golang</strong> projects, collaborating closely with colleagues to deliver high-quality, scalable solutions.</li>
-                <li><strong>Independent Projects:</strong> I have successfully managed solo projects, such as a <strong>web scraping tool</strong>, which showcased my strong skills in automation, problem-solving, and Python development.</li>
-            </ul>
-    
-            <h3>Education</h3>
-            <ul>
-                <li><strong>High School (PCM)</strong> – St. Jones Convent H.S. School, Khandwa, Madhya Pradesh (2015)  
-                    <strong>Marks:</strong> 78% (Division I)</li>
-                <li><strong>Bachelor of Engineering / Bachelor of Technology (B.E./B.Tech) in Mechanical Engineering</strong> – IPS Academy, Indore, RGPV University (2019)  
-                    <strong>Marks:</strong> 75% (Division I)</li>
-            </ul>
-        </div>
-    </section>
-    
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="section-content">
-            <h2>My Art</h2>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Flaticons  -->
+	<!-- <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css"> -->
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-            <div class="project">
-                <h3>AI-Driven Client Communication System</h3>
-                <p><strong>Role:</strong> Solo Developer</p>
-                <p><strong>Description:</strong> 
-                Developed an intermediary layer between clients and a chatbot,enabling efficient message handling. Clients submit queries via messaging, which are validated, logged, and forwarded to an Al/ML system for response generation. The received replies are routed to an approval section where employees assess accuracy before responding to clients. This streamlined process enhances communication and ensures quality control in client interactions
-                </p>
-                <p><strong>Technologies:</strong> Django, React, Docker, RabbitMQ, Redis</p>
-            </div>
+	</head>
+	<body>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/me2.jpg);"></div>
+				<h1 id="colorlib-logo"><a href="index.html">Pratik Maheshwari</a></h1>
+				<span class="position"><a href="#">Software Engineer</a> in India</span>
+			</div>
+			<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">About</a></li>
+						<li><a href="#" data-nav-section="services">Services</a></li>
+						<li><a href="#" data-nav-section="skills">Skills</a></li>
+						<li><a href="#" data-nav-section="education">Education</a></li>
+						<li><a href="#" data-nav-section="experience">Experience</a></li>
+						<!-- <li><a href="#" data-nav-section="work">Work</a></li> -->
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
 
-            <div class="project">
-                <h3>Article Search Desktop Application</h3>
-                <p><strong>Role:</strong> Team Lead</p>
-                <p><strong>Description:</strong> 
-                    Developed a custom web scraping tool capable of extracting product data from Amazon based on provided category URLs. This tool efficiently collected data for all products within specified categories. Additionally, I implemented a graphical system that allowed the client to monitor daily sales of the items, providing valuable insights for business decision-making. This project not only demonstrated my web scraping skills but also showcased my ability to create data-driven solutions to meet client needs.
-                </p>
-                <p><strong>Technologies:</strong> Python, Django, SQL, JavaScript</p>
-            </div>
+			<div class="colorlib-footer">
+				<ul>
+					<li ><a href="https://www.linkedin.com/in/pratik-maheshwari-a2714b169" target="_blank" style="color: #2c98f0;"><i class="fab fa-linkedin"></i></a></li>
+					<li ><a href="https://github.com/GuitarGeekCoder" target="_blank"style="color: black;"><i class="fab fa-github"></i></a></li>
+				</ul>
+			</div>
 
-            <div class="project">
-                <h3>Booking.com Scraper</h3>
-                <p><strong>Role:</strong> Solo Developer</p>
-                <p><strong>Description:</strong> Developed a web scraping tool to extract competitor data and prices from Booking.com, helping suggest optimal room prices for an internal hotel management system.</p>
-                <p><strong>Technologies:</strong> Python, RabbitMQ</p>
-            </div>
+		</aside>
 
-            <div class="project">
-                <h3>Amazon Scraper</h3>
-                <p><strong>Role:</strong> Solo Developer</p>
-                <p><strong>Description:</strong> 
-                    Developed a custom web scraping tool capable of extracting product data from Amazon based on provided category URLs. This tool efficiently collected data for all products within specified categories. Additionally, I implemented a graphical system that allowed the client to monitor daily sales of the items, providing valuable insights for business decision-making. This project not only demonstrated my web scraping skills but also showcased my ability to create data-driven solutions to meet client needs.</p>
-                <p><strong>Technologies:</strong> Python, Golang, SQL, JavaScript</p>
-            </div>
+		<div id="colorlib-main">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+				   	<li style="background-image: url(images/img_bg_1.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner js-fullheight">
+					   					<div class="desc">
+						   					<h1>Hi! <br>I'm Pratik</h1>
+												<p><a class="btn btn-primary btn-learn" href="https://drive.google.com/file/d/16F6fRW5RAyE41B76wzLFPpi1A_NcgwVR/view">Download CV <i class="icon-download4"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				   	<li style="background-image: url(images/dev.jpg);">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1>I am <br>a Software Developer</h1>
+											   <p><a class="btn btn-primary btn-learn" href="https://drive.google.com/file/d/16F6fRW5RAyE41B76wzLFPpi1A_NcgwVR/view">Download CV <i class="icon-download4"></i></a></p>
+											</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
 
-            <div class="project">
-                <h3>Lead and Order Management Portal</h3>
-                <p><strong>Role:</strong> Team Lead</p>
-                <p><strong>Description:</strong> 
-                    As a team lead, I spearheaded the development of a comprehensive Stock and Lead Management Admin Portal. This platform empowers administrators to efficiently manage their teams and streamline operations. One of the core functionalities includes the ability for administrators to onboard employees within their organization seamlessly. Additionally, the portal offers robust features for tracking and managing leads generated through our mobile application, ensuring a centralized repository for all client interactions and requirements. Through strategic leadership and innovative solutions, our team delivered a scalable and user-friendly platform tailored to the unique needs of our clients.
-                </p>
-                <p><strong>Technologies:</strong> Golang, React, RabbitMQ, Docker</p>
-            </div>
+			<section class="colorlib-about" data-section="about">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About Us</span>
+										<h2 class="colorlib-heading">Who Am I?</h2>
+										<p><strong>Hi I'm Pratik Maheshwari</strong> a passionate and results-driven Software Developer with more than 2 years of experience in building scalable, high-performance web applications. I specialize in both backend and frontend technologies, including Python, Django, Golang, and React. With a strong problem-solving mindset, I thrive in dynamic environments where I can work on real-world business challenges and continuously enhance my technical skills.</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<span class="icon2"><i class="fas fa-cogs"></i></span>
+										<h3>Web Scrapping</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<span class="icon2"><i class="fas fa-desktop"></i></span>
+										<h3>Web Development</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-phone3"></i></span>
+										<h3>Application</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<span class="icon2"><i class="fas fa-code"></i></span>
+										<h3>Business Software</h3>
+									</div>
+								</div>
+							</div>
 
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-<!--      
-    <section id="skills" class="section">
-        <div class="section-content">
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-react fa-beat-fade" style="color: #74C0FC;"></i> React</li>
-                        <li><i class="fa-brands fa-js fa-beat-fade" style="color: #FFD43B;"></i> JavaScript</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-golang fa-beat-fade" style="color: #74C0FC;"></i> Golang</li>
-                        <li><i class="fa-brands fa-python fa-beat-fade" style="color: #FFD43B;"></i> Python</li>
-                        <li>Django</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>Tools & Databases</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-docker fa-beat-fade" style="color: #74C0FC;"></i> Docker</li>
-                        <li><i class="fa-solid fa-database fa-beat-fade" style="color: #FFD43B;"></i> MYSQL</li>
-                        <li>Redis</li>
-                        <li>RabbitMQ</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section id="skills" class="section">
-        <div class="section-content">
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-react fa-beat-fade" style="color: #74C0FC;"></i> React</li>
-                        <li><i class="fa-brands fa-js fa-beat-fade" style="color: #FFD43B;"></i> JavaScript</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-golang fa-beat-fade" style="color: #74C0FC;"></i> Golang</li>
-                        <li><i class="fa-brands fa-python fa-beat-fade" style="color: #FFD43B;"></i> Python</li>
-                        <li>Django</li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h3>Tools & Databases</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-docker fa-beat-fade" style="color: #74C0FC;"></i> Docker</li>
-                        <li><i class="fa-solid fa-database fa-beat-fade" style="color: #FFD43B;"></i> MYSQL</li>
-                        <li>Redis</li>
-                        <li>RabbitMQ</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										<h2>I am happy to let you know that 10+ projects have been successfully completed!</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 
-    <section id="hero_footer">
-        <div class="hero-content">
-            <p>If you'd like to collaborate or discuss opportunities, feel free to reach out to me through any of the channels below.</p>
-            <ul>
-                <li>
-                    <a href="mailto:pratikmaheshwari321@gmail.com">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+919617655784">
-                        <i class="fas fa-phone-alt"></i> Phone
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/pratik-maheshwari-a2714b169" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/GuitarGeekCoder" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Pratik Maheshwari. All Rights Reserved.</p>
-        </div>
-    </footer>
-</body>
+			
+			<section class="colorlib-services" data-section="services">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">What I do?</span>
+							<h2 class="colorlib-heading">Here are some of my expertise</h2>
+						</div>
+					</div>
+					<div class="row row-pt-md">
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-1">
+								<span class="icon">
+									<i class="fas fa-crown"></i>
+								</span>
+								<div class="desc">
+									<h3>Team Leadership</h3>
+									<p>Led a dynamic team of developers in the successful execution of multiple projects, including mobile and web applications</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-2">
+								<span class="icon">
+									<i class="fas fa-hands-helping"></i>
+								</span>
+								<div class="desc">
+									<h3>Collaboration</h3>
+									<p>Worked as a key contributor to various projects, collaborating closely with colleagues to deliver high-quality, scalable solutions.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-3">
+								<span class="icon">
+									<i class="fas fa-user"></i>
+								</span>
+								<div class="desc">
+									<h3>Independent Projects</h3>
+									<p>I have successfully managed multiple solo projects,which showcased my strong skills in automation, problem-solving, and development.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="colorlib-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row">
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="730" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Cups of coffee with developers</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Projects</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="8" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Clients</span>
+						</div>
+						<div class="col-md-3 text-center animate-box">
+							<span class="colorlib-counter js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter-label">Organizations</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="colorlib-skills" data-section="skills">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Specialty</span>
+							<h2 class="colorlib-heading animate-box">My Skills</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<p>I’m passionate about creating solutions that have a real-world impact. Whether it's optimizing performance, improving user experience, or developing entirely new systems, I approach each project with a problem-solving mindset and strive for continuous improvement.I possess a versatile skill set like</p>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Golang</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
+								    <span>75%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Python</h3>
+								<div class="progress">
+									 <div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
+									  aria-valuemin="0" aria-valuemax="100" style="width:85%">
+									<span>85%</span>
+									  </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Django</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>React</h3>
+								<div class="progress">
+									 <div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
+									  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+									<span>70%</span>
+									  </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Redis</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
+								    <span>60%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>RabbitMQ</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-7" role="progressbar" aria-valuenow="60"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
+								    <span>60%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>SQL</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+								    <span>90%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Docker</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								    <span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-education" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Education</span>
+							<h2 class="colorlib-heading animate-box">Education</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="fancy-collapse-panel">
+								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingTwo">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Bachelor Degree of Mechanical Engineering
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+									        <div class="panel-body">
+												<p>While my formal education is in <strong>Mechanical Engineering</strong>, the problem-solving skills, analytical thinking, and attention to detail I developed have been key in my transition to software development. During my degree, I gained valuable experience in using programming languages for simulations, system modeling, and automation tasks—skills that directly translate into software engineering roles.</p>
+									            <ul>
+													<li>Developed strong problem-solving skills that are directly applicable to software development.</li>
+													<li>Utilized programming languages (such as C and Python) for simulations and modeling.</li>
+													<li>Worked on interdisciplinary projects, collaborating with teams to design, optimize, and automate complex systems.</li>
+													<li>Gained an understanding of algorithms and system logic, crucial for software development and optimization.</li>
+													<li>Achieved a <strong>7.5 CGPA</strong> during my Bachelor's in Mechanical Engineering.</li>
+
+												</ul>
+									        </div>
+									    </div>
+									</div>
+									
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingFive">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">High School Secondary Education
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+									        <div class="panel-body">
+									            <p>Throughout my academic journey, I have consistently demonstrated strong dedication and performance in my studies. My early education provided me with the necessary skills in critical thinking, problem-solving, and analytical reasoning, which are essential for success in the tech industry.</p>	
+												<ul>
+													<li>Achieved <strong>78%</strong> in 12th grade, specializing in <strong>Science</strong>.</li>
+													<li>Achieved <strong>74%</strong> in 10th grade, with a focus on Mathematics and General Studies.</li>
+												</ul>
+											</div>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-experience" data-section="experience">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Experience</span>
+							<h2 class="colorlib-heading animate-box">Work Experience</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a href="#">Lead Software Developer at Reak Infotech LLP</a> <span>2022-Present</span></h2>
+					                  <p>As the <strong> Software Developer </strong> at <strong>Reak Infotech LLP</strong>, I oversee the design and development of cutting-edge software solutions. My role involves managing a team of developers, ensuring project deadlines are met, and collaborating with clients to deliver high-quality products. I am dedicated to driving innovation and improving the efficiency of our development processes.</p>
+									</div>
+					            </div>
+					         </article>
+
+					      </div>
+					   </div>
+				   </div>
+				</div>
+			</section>
+<!-- 
+			<section class="colorlib-work" data-section="work">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">My Work</span>
+							<h2 class="colorlib-heading animate-box">Recent Work</h2>
+						</div>
+					</div>
+					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-12">
+							<p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span> <span><a href="#">Apps</a></span></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/img-1.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 01</a></h3>
+										<span>Website</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/img-2.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 02</a></h3>
+										<span>Animation</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+							<div class="project" style="background-image: url(images/img-3.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 03</a></h3>
+										<span>Illustration</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<div class="project" style="background-image: url(images/img-4.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 04</a></h3>
+										<span>Application</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/img-5.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 05</a></h3>
+										<span>Graphic, Logo</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="project" style="background-image: url(images/img-6.jpg);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="work.html">Work 06</a></h3>
+										<span>Web Design</span>
+										<p class="icon">
+											<span><a href="#"><i class="icon-share3"></i></a></span>
+											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
+											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box">
+							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+
+			<section class="colorlib-contact" data-section="contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Get in Touch</span>
+							<h2 class="colorlib-heading">Contact</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="fas fa-envelope"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="mailto:pratikmaheshwari321@gmail.com">Feel free to get in touch via email</a></p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-map"></i>
+								</div>
+								<div class="colorlib-text">
+									<p>114,Hatkeshwar Ward khandwa[M.P]</p>
+								</div>
+							</div>
+
+							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="colorlib-icon">
+									<i class="icon-phone"></i>
+								</div>
+								<div class="colorlib-text">
+									<p><a href="tel:+919617655784">Let's have a call</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-md-push-1">
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
+									<form id="contact-form" onsubmit="sendFormData(event)">
+										<div class="form-group">
+											<input type="text" name="name" class="form-control" placeholder="Name" required>
+										</div>
+										<div class="form-group">
+											<input type="email" name="email" class="form-control" placeholder="Email" required>
+										</div>
+										<div class="form-group">
+											<input type="text" name="subject" class="form-control" placeholder="Subject" required>
+										</div>
+										<div class="form-group">
+											<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+										</div>
+										<div class="form-group">
+											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div><!-- end:colorlib-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	
+	
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+	<script>
+		function sendFormData(event) {
+			event.preventDefault();  // Prevent the form from submitting in the usual way
+
+			// Collect the form data
+			const formData = new FormData(document.getElementById('contact-form'));
+			document.getElementById('contact-form').reset(); 
+			// Create an AJAX request to send the data to Django backend
+			fetch('http://localhost:8001/api/apna/mail/send_mail/', {
+				method: 'POST',
+				body: formData,
+			})
+			.then(response => response.json())
+			.then(data => {
+				console.log("data",data)
+				if (data.status === 'success') {
+					alert('Your message has been sent successfully!');
+				} else {
+					alert("Currently, Pratik is unable to receive your query.");
+				}
+			})
+			.catch(error => {
+				console.error('Error:', error);
+				// alert('An error occurred. Please try again.');
+				alert("Currently, Pratik is unable to receive your query.");
+			});
+		}
+	</script>
+
+	</body>
 </html>
+
